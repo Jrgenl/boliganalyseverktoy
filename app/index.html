@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boliganalyseverktøy</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f7fa;
+        }
+        header {
+            background-color: #1E88E5;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        h2 {
+            color: #1E88E5;
+            border-bottom: 2px solid #1E88E5;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: space-between;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            margin-bottom: 30px;
+            flex: 1 1 300px;
+        }
+        .card h3 {
+            color: #1E88E5;
+            margin-top: 0;
+        }
+        .feature-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .feature-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .feature-list li:last-child {
+            border-bottom: none;
+        }
+        .feature-list li::before {
+            content: "✓";
+            color: #26A69A;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #1E88E5;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+        .cta-button:hover {
+            background-color: #1565C0;
+        }
+        .screenshot {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .card {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Boliganalyseverktøy</h1>
+        <p>Få innsikt i boligannonser fra Finn.no - analyser risikoer, høydepunkter og prisestimater</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Om Boliganalyseverktøyet</h2>
+            <p>Boliganalyseverktøyet er en kraftig webapplikasjon som hjelper deg med å analysere boligannonser fra Finn.no. Ved å lime inn URL-en til en boligannonse, får du en omfattende analyse som hjelper deg å ta mer informerte beslutninger ved boligkjøp.</p>
+            
+            <div class="container">
+                <div class="card">
+                    <h3>Identifiserer Risikoer</h3>
+                    <p>Verktøyet analyserer boligannonsen og identifiserer potensielle risikoer, kategorisert etter alvorlighetsgrad.</p>
+                    <ul class="feature-list">
+                        <li>Fuktproblemer</li>
+                        <li>Alder på kritiske komponenter</li>
+                        <li>Potensielle vedlikeholdsbehov</li>
+                        <li>Beliggenhetsfaktorer</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h3>Fremhever Høydepunkter</h3>
+                    <p>Få oversikt over boligens positive aspekter, gruppert etter kategori.</p>
+                    <ul class="feature-list">
+                        <li>Nylig oppgraderte rom</li>
+                        <li>Attraktive fasiliteter</li>
+                        <li>Energieffektive løsninger</li>
+                        <li>Spesielle kvaliteter</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h3>Prisanalyse</h3>
+                    <p>Få innsikt i boligens pris og verdi med detaljert prisanalyse.</p>
+                    <ul class="feature-list">
+                        <li>Estimert markedsverdi</li>
+                        <li>Sammenligning med prisantydning</li>
+                        <li>Beregning av månedlige kostnader</li>
+                        <li>Kvadratmeterpris-analyse</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Hvordan det fungerer</h2>
+            <p>Boliganalyseverktøyet bruker avanserte algoritmer for å analysere boligannonser fra Finn.no. Verktøyet henter data fra annonsen, behandler informasjonen, og presenterer en omfattende analyse som hjelper deg å ta mer informerte beslutninger.</p>
+            
+            <ol>
+                <li><strong>Lim inn URL</strong> - Kopier URL-en til en boligannonse fra Finn.no og lim den inn i verktøyet</li>
+                <li><strong>Få analyse</strong> - Verktøyet henter og analyserer data fra annonsen</li>
+                <li><strong>Se resultater</strong> - Få presentert risikoer, høydepunkter og prisanalyse</li>
+            </ol>
+            
+            <p>Applikasjonen er nå tilgjengelig som en webapplikasjon, slik at du kan bruke den fra hvilken som helst enhet med internettilgang.</p>
+            
+            <a href="https://boliganalyse.streamlit.app" class="cta-button">Prøv Boliganalyseverktøyet</a>
+        </section>
+
+        <section>
+            <h2>Teknologi</h2>
+            <p>Boliganalyseverktøyet er bygget med moderne teknologier for å gi deg den beste brukeropplevelsen:</p>
+            
+            <div class="container">
+                <div class="card">
+                    <h3>Frontend</h3>
+                    <ul class="feature-list">
+                        <li>Streamlit for interaktivt brukergrensesnitt</li>
+                        <li>Responsivt design for alle enheter</li>
+                        <li>Datavisualisering med Matplotlib og Seaborn</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h3>Backend</h3>
+                    <ul class="feature-list">
+                        <li>Python for databehandling og analyse</li>
+                        <li>BeautifulSoup4 for web scraping</li>
+                        <li>scikit-learn for maskinlæring og analyse</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h3>Infrastruktur</h3>
+                    <ul class="feature-list">
+                        <li>Docker for containerisering</li>
+                        <li>Streamlit Cloud for hosting</li>
+                        <li>Automatisk HTTPS-sikkerhet</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Boliganalyseverktøy © 2025 | Utviklet av Manus</p>
+        <p>Denne applikasjonen er ikke tilknyttet Finn.no eller visning.ai</p>
+    </footer>
+</body>
+</html>

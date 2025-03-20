@@ -1,0 +1,17 @@
+name: boliganalyse
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+    - beautifulsoup4==4.13.3
+    - requests==2.31.0
+    - pandas==2.2.0
+    - numpy==1.26.0
+    - streamlit==1.43.2
+    - scikit-learn==1.6.1
+    - nltk==3.9.1
+    - spacy==3.8.4
+    - python-dotenv==1.0.1
+    - matplotlib==3.8.2
+    - seaborn==0.13.0
+    - pillow==10.2.0
